@@ -43,19 +43,26 @@ img{
   list-style: none;
 }
 .site-navigation a,
-.basket a {
+.basket {
   color: var(--basic-black);
 }
 .site-navigation a:hover,
-.basket a:hover{
+.basket:hover{
   color: var(--basic-pink);
 }
 .site-navigation a:active,
-.basket a:active{
+.basket:active{
   color: var(--basic-extra-gray);
 }
 .site-navigation a:focus,
-.basket a:focus{
+.basket:focus{
   text-decoration: underline;
   text-decoration-color: var(--basic-pink);
+}
+.description-text{
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+  background-color:var(--basic-gray);
+
 }
