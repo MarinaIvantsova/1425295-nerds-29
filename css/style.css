@@ -1,11 +1,10 @@
-/* Variables */
-:root {
+:root{
   --basic-gray: #EEEEEE;
   --basic-extra-gray: #888888;
   --basic-very-gray:#666666;
   --basic-black: #000000;
   --basic-extra-black: #444444;
-   --basic-white: #FFFFFF;
+  --basic-white: #FFFFFF;
   --basic-pink: #FB565A;
   --basic-extra-pink:#E74246;
   --basic-very-pink:#D7373B;
@@ -19,8 +18,7 @@
 }
 
 /* Global */
-body {
-  min-width: 1440px;
+body{
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -28,13 +26,11 @@ body {
   line-height: 24px;
   font-weight: normal;
   color: var(--basic-black);
-  /*text-transform: uppercase;*/
   background-color: var(--basic-white);
-   /*background-image: url("../img/bg.jpg");*/
   background-position: top center;
   background-repeat: no-repeat;
 }
-a {
+a{
   text-decoration: none;
 }
 img{
@@ -47,15 +43,15 @@ img{
 .main-navigation{
   font-size: 16px;
   line-height: 30px;
-  font-weight: 500px;
+  font-weight: 500;
   text-transform: uppercase;
   color: var(--basic-black);
-  }
+}
 .site-navigation{
   list-style: none;
 }
 .site-navigation a,
-.basket {
+.basket{
   color: var(--basic-black);
 }
 .site-navigation a:hover,
@@ -81,13 +77,13 @@ img{
   color: var(--basic-black);
   background-color:var(--basic-gray);
 }
-.description .button  {
+.description .button{
   color:var(--basic-white);
   background-color: var(--basic-pink);
   padding: 15px 54px ;
   font-size: 16px;
-line-height: 18px;
-text-transform: uppercase;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 .description .button:hover{
   background-color: var(--basic-extra-pink);
@@ -97,15 +93,13 @@ text-transform: uppercase;
 }
 .services-list{
   list-style:none;
+  margin: 0;
+  padding: 0;
 }
 .service-item-title{
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-}
-.service-item-text{
-  font-size: 16px;
-  line-height: 24px;
 }
 .services .button{
   font-size: 16px;
@@ -116,7 +110,6 @@ text-transform: uppercase;
   background-color: var(--basic-pink);
   color:var(--basic-white);
   padding: 15px 40px;
-
 }
 .services .pink:hover{
   background-color: var(--basic-extra-pink);
@@ -128,7 +121,6 @@ text-transform: uppercase;
   background-color: var(--basic-green);
   color:var(--basic-white);
   padding: 15px 40px;
-
 }
 .services .green:hover{
   background-color: var(--basic-extra-green);
@@ -140,7 +132,6 @@ text-transform: uppercase;
   background-color: var(--basic-yellow);
   color:var(--basic-white);
   padding: 15px 40px;
-
 }
 .services .yellow:hover{
   background-color: var(--basic-extra-yellow);
@@ -161,8 +152,8 @@ text-transform: uppercase;
 }
 .table-item-row1{
   font-weight: bold;
-font-size: 45px;
-line-height: 64px;
+  font-size: 45px;
+  line-height: 64px;
 }
 .table-item-row1 sup{
   font-weight: bold;
@@ -171,40 +162,40 @@ line-height: 64px;
 }
 .table-item-row2{
   font-size: 16px;
-line-height: 18px;
-font-weight: normal;
+  line-height: 18px;
+  font-weight: normal;
 }
 .companies .companies-list{
   list-style:none;
+  margin: 0;
+  padding: 0;
 }
 .contacts .contacts-title{
   font-weight: bold;
-font-size: 18px;
-line-height: 30px;
+  font-size: 18px;
+  line-height: 30px;
 }
-.contacts .contacts-text
+.contacts .contacts-text,
+.contacts .contacts-phone
 {
   font-size: 16px;
   line-height: 18px;
   color:var(--basic-very-gray);
 }
-.contacts .contacts-phone{
-  font-size: 16px;
-  line-height: 18px;
-  color:var(--basic-very-gray);
-
-}
-.contacts .feedback   {
+.contacts .feedback{
+  display:inline-block;
   color:var(--basic-white);
   background-color: var(--basic-pink);
-  padding: 15px 44px ;
+  padding: 15px 44px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
 }
 .socials .socials-list{
-  list-style: none;;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .socials .socials-text{
   font-weight: bold;
