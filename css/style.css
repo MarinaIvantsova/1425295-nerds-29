@@ -41,14 +41,16 @@ img{
   max-width: 100%;
   height: auto;
 }
+.main-header{
+  background-color:var(--basic-gray);
+}
 .main-navigation{
   font-size: 16px;
   line-height: 30px;
   font-weight: 500px;
   text-transform: uppercase;
   color: var(--basic-black);
-  background-color:var(--basic-gray);
-}
+  }
 .site-navigation{
   list-style: none;
 }
