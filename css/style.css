@@ -4,6 +4,9 @@
   --basic-very-gray:#666666;
   --basic-black: #000000;
   --basic-extra-black: #444444;
+  --basic-extra-extra-gray:#DFDFDF;
+  --special-gray: #D5D5D5;
+  --special-very-gray:#DBDBDB;
   --basic-white: #FFFFFF;
   --basic-pink: #FB565A;
   --basic-extra-pink:#E74246;
@@ -36,6 +39,113 @@ a{
 img{
   max-width: 100%;
   height: auto;
+}
+.inner-page .main-header {
+  background-color: var(--basic-gray);
+}
+.inner-page {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.inner-page .shop{
+  text-decoration-line: underline;
+  text-decoration-color: var(--basic-pink);
+}
+.center-title{
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.sort-list{
+  list-style: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort-list a:hover{
+  color:var(--basic-black);
+  opacity:0.6;
+}
+.sort-list a:active{
+  color:var(--basic-black);
+  opacity:1;
+  }
+
+.sort-list a{
+  color:var(--basic-black);
+  opacity:0.3;
+}
+.catalog-info{
+  display:none;
+}
+.catalog-item:hover .catalog-info{
+  display: block
+}
+.catalog-list{
+  list-style: none;
+}
+.catalog-category{
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-very-gray);
+}
+.catalog-item-title:hover{
+  color: var(--basic-pink);
+}
+.catalog-item-title:active{
+  color:var(--basic-black);
+  opacity: 0.3;
+}
+.catalog-item-title{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.catalog-item-price .button{
+  padding: 15px 72px;
+  background-color: var(--basic-pink);
+  color: var(--basic-white);
+}
+.catalog-item-price .button:hover{
+  background-color: var(--basic-extra-pink);
+}
+.catalog-item-price .button:active{
+  background-color: var(--basic-very-pink);
+}
+
+.pagination-list {
+  list-style: none;
+}
+.pagination-item a {
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+  border-radius: 3px;
+}
+.pagination-item a:hover {
+  color: var(--basic-black);
+  background-color: var(--basic-extra-extra-gray);
+  border-radius: 3px;
+}
+.pagination-item a:active{
+  background: var(--special-gray);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
+  opacity: 0.3;
+}
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:active {
+  color: var(--basic-black);
+  background: rgba(0, 0, 0, 0.0001);
+  border: 3px solid var(--special-very-gray);
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 .main-header{
   background-color:var(--basic-gray);
@@ -170,6 +280,7 @@ img{
   margin: 0;
   padding: 0;
 }
+
 .contacts .contacts-title{
   font-weight: bold;
   font-size: 18px;
@@ -207,3 +318,4 @@ img{
   line-height: 22px;
   color: var(--basic-extra-black);
 }
+
