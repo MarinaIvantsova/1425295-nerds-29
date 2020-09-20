@@ -58,7 +58,7 @@ img{
 }
 
 .sort-list{
-  list-style: none;
+
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -84,8 +84,17 @@ img{
 .catalog-item:hover .catalog-info{
   display: block
 }
-.catalog-list{
+.catalog-list,
+.sort-list,
+.pagination-list,
+.site-navigation,
+.services-list,
+.companies .companies-list,
+.socials .socials-list
+{
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .catalog-category{
   font-size: 16px;
@@ -119,13 +128,11 @@ img{
   background-color: var(--basic-very-pink);
 }
 
-.pagination-list {
-  list-style: none;
-}
 .pagination-item a {
   color: var(--basic-black);
   background-color: var(--basic-gray);
   border-radius: 3px;
+  font-weight:500;
 }
 .pagination-item a:hover {
   color: var(--basic-black);
@@ -157,12 +164,11 @@ img{
   text-transform: uppercase;
   color: var(--basic-black);
 }
-.site-navigation{
-  list-style: none;
-}
+
 .site-navigation a,
 .basket{
   color: var(--basic-black);
+  font-weight: 500;
 }
 .site-navigation a:hover,
 .basket:hover{
@@ -186,6 +192,7 @@ img{
   line-height: 55px;
   color: var(--basic-black);
   background-color:var(--basic-gray);
+  font-weight: 500;
 }
 .description .button{
   color:var(--basic-white);
@@ -194,17 +201,13 @@ img{
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  font-weight:500;
 }
 .description .button:hover{
   background-color: var(--basic-extra-pink);
 }
 .description .button:active{
   background-color: var(--basic-very-pink);
-}
-.services-list{
-  list-style:none;
-  margin: 0;
-  padding: 0;
 }
 .service-item-title{
   font-size: 24px;
@@ -215,6 +218,7 @@ img{
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  font-weight: 500;
 }
 .services .pink{
   background-color: var(--basic-pink);
@@ -257,9 +261,7 @@ img{
   font-weight: bold;
   text-transform: uppercase;
 }
-.about-list{
-  list-style-type: square;
-}
+
 .table-item-row1{
   font-weight: bold;
   font-size: 45px;
@@ -275,12 +277,6 @@ img{
   line-height: 18px;
   font-weight: normal;
 }
-.companies .companies-list{
-  list-style:none;
-  margin: 0;
-  padding: 0;
-}
-
 .contacts .contacts-title{
   font-weight: bold;
   font-size: 18px;
@@ -303,11 +299,6 @@ img{
   text-transform: uppercase;
   text-align: center;
 }
-.socials .socials-list{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 .socials .socials-text{
   font-weight: bold;
   font-size: 36px;
@@ -318,4 +309,9 @@ img{
   line-height: 22px;
   color: var(--basic-extra-black);
 }
+.socials-item a{
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+  background-color: #E1E1E1;
+  border-radius: 15px;
+ }
 
