@@ -8,6 +8,7 @@
   --special-gray: #D5D5D5;
   --special-very-gray:#DBDBDB;
   --basic-white: #FFFFFF;
+  --special-extra-gray:#E1E1E1;
   --basic-pink: #FB565A;
   --basic-extra-pink:#E74246;
   --basic-very-pink:#D7373B;
@@ -310,8 +311,7 @@ img{
   color: var(--basic-extra-black);
 }
 .socials-item a{
-  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
-  background-color: #E1E1E1;
+  background-color: var(--special-extra-gray);
   border-radius: 15px;
  }
 
