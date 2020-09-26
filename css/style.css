@@ -71,7 +71,8 @@ img{
   margin: 0 auto;
   padding: 0 10px;
 }
-.center {
+.center,
+.main-footer {
   width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
@@ -121,8 +122,19 @@ img{
 .services-list{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;;
 }
-
+.service-item p{
+ margin-top: 23px;
+ margin-bottom: 32px;
+}
+.companies-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+.companies{
+  margin-bottom:185px;
+}
 .inner-page .main-header {
   background-color: var(--basic-gray);
 }
@@ -141,13 +153,11 @@ img{
 }
 
 .sort-list{
-
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 }
-
 .sort-list a:hover{
   color:var(--basic-black);
   opacity:0.6;
@@ -156,7 +166,6 @@ img{
   color:var(--basic-black);
   opacity:1;
   }
-
 .sort-list a{
   color:var(--basic-black);
   opacity:0.3;
@@ -173,7 +182,7 @@ img{
 .site-navigation,
 .services-list,
 .companies .companies-list,
-.socials .socials-list
+.socials, .socials-list
 {
   list-style: none;
   margin: 0;
@@ -210,7 +219,6 @@ img{
 .catalog-item-price .button:active{
   background-color: var(--basic-very-pink);
 }
-
 .pagination-item a {
   color: var(--basic-black);
   background-color: var(--basic-gray);
@@ -240,9 +248,6 @@ img{
 .main-header{
   background-color:var(--basic-gray);
 }
-
-
-
 .site-navigation a,
 .basket{
   color: var(--basic-black);
@@ -261,7 +266,6 @@ img{
   text-decoration: underline;
   text-decoration-color: var(--basic-pink);
 }
-
 .description-text{
   font-size: 55px;
   line-height: 55px;
@@ -288,6 +292,7 @@ img{
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  order: 1;
 }
 .services .button{
   font-size: 16px;
@@ -328,6 +333,10 @@ img{
 .services .yellow:active{
   background-color: var(--basic-very-yellow);
 }
+.about{
+  display: grid;
+  grid-template-columns: 1fr max-content;
+}
 .about-text{
   font-size: 45px;
   line-height: 45px;
@@ -335,8 +344,11 @@ img{
 .about-subtitle{
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 31px;
 }
-
+.about-list li{
+  padding-bottom: 25px;
+}
 .table-item-row1{
   font-weight: bold;
   font-size: 45px;
@@ -374,6 +386,11 @@ img{
   text-transform: uppercase;
   text-align: center;
 }
+.socials-wrapper{
+  display:grid;
+  grid-template-columns: 1fr max-content;
+
+}
 .socials .socials-text{
   font-weight: bold;
   font-size: 36px;
@@ -388,4 +405,12 @@ img{
   background-color: var(--special-extra-gray);
   border-radius: 15px;
  }
-
+ .socials-list{
+   width: 260px;
+ }
+.socials-text-wrapper{
+  width: 560px;
+}
+.socials{
+  margin-top: 122px;
+}
