@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
@@ -7,31 +8,41 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page-body">
   <header class="main-header">
-    <a class="main-header-logo">
-      <img src="img/logo.svg" width="160" height="65" alt="Nerds">
-    </a>
     <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li class="site-navigation-item"><a href="#">Студия</a></li>
-        <li class="site-navigation-item"><a href="#">Клиенты</a></li>
-        <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
-        <li class="site-navigation-item"><a href="#">Контакты</a></li>
-      </ul>
-      <a class="basket" href="#">Корзина</a>
+      <a class="main-header-logo">
+        <img src="img/logo.svg" width="160" height="65" alt="Nerds">
+      </a>
+    
+        <ul class="site-navigation">
+          <li class="site-navigation-item"><a href="#">Студия</a></li>
+          <li class="site-navigation-item"><a href="#">Клиенты</a></li>
+          <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-item"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="basket-navigation">
+          <a class="basket" href="#">Корзина</a>
+        </div>
+      
     </nav>
   </header>
   <main class="center">
-    <h1 class="center-title">Дизайн студия Nerds</h1>
+    <h1 class="visually-hidden">Дизайн студия Nerds</h1>
     <section class="description">
-      <h2 class="description-title">Описание продукта</h2>
+      <h2 class="visually-hidden">Описание продукта</h2>
+      <div class="description-wrapper">
       <p class="description-text"><strong>Долго,дорого,<br>скурпулезно</strong></p>
-      <p>
+      <p class="description-text-info">
         Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
       </p>
-      <img src="https://via.placeholder.com/760x431" alt="Пример мобильного приложения"><br>
       <a class="button info" href="#">Узнать больше</a><br>
+    </div>
+    <div class="description-image">
+      <img src="https://via.placeholder.com/760x431" alt="Пример мобильного приложения"><br>
+    </div>
+      
     </section>
     <section class="services">
       <h2 class="services-title">Услуги</h2>
@@ -86,11 +97,13 @@
     <section class="companies">
       <h2 class="companies-title">Компании</h2>
       <ul class="companies-list">
-        <li class="company-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html.svg" width="199" height="68"
-              alt="Html academy"></a></li>
-        <li class="company-item"><a href="#"><img src="img/borod-icon.svg" width="209" height="90" alt="Borodinski barbershop"></a></li>
+        <li class="company-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html.svg" width="199"
+              height="68" alt="Html academy"></a></li>
+        <li class="company-item"><a href="#"><img src="img/borod-icon.svg" width="209" height="90"
+              alt="Borodinski barbershop"></a></li>
         <li class="company-item"><a href="#"><img src="img/pink-icon.svg" width="185" height="52" alt="Pink"></a></li>
-        <li class="company-item"><a href="#"><img src="img/mishka.icon.svg" width="173" height="84" alt="Mishka"></a></li>
+        <li class="company-item"><a href="#"><img src="img/mishka.icon.svg" width="173" height="84" alt="Mishka"></a>
+        </li>
       </ul>
     </section>
   </main>
@@ -105,12 +118,14 @@
       <h3 class="socials-title">Контакты</h3>
       <ul class="socials-list">
         <li class="socials-item"><a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
-        <li class="socials-item"><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук" ></a></li>
-        <li class="socials-item"><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
+        <li class="socials-item"><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+        <li class="socials-item"><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
+        </li>
       </ul>
       <p class="socials-text"><strong>Давайте дружить, это выгодно!</strong></p>
       <p class="socials-sale">Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
 </body>
+
 </html>
