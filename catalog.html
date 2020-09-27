@@ -10,10 +10,11 @@
 
 <body class="page-body inner-page">
   <header class="main-header">
-    <a class="main-header-logo">
-      <img src="img/logo.svg" width="160" height="65" alt="Nerds">
-    </a>
+
     <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img/logo.svg" width="160" height="65" alt="Nerds">
+      </a>
       <ul class="site-navigation">
         <li class="site-navigation-item"><a href="index.html">Студия</a></li>
         <li class="site-navigation-item"><a href="#">Клиенты</a></li>
@@ -21,20 +22,26 @@
         <li class="site-navigation-item"><a href="#">Контакты</a></li>
       </ul>
       <a class="basket" href="#">Корзина</a>
+      <p class="title">Магазин готовых шаблонов</p>
     </nav>
+
   </header>
   <main class="center">
-    <h1 class="center-title">Магазин готовых шаблонов</h1>
-    <h2 class="center-subtitle">Сортировать:</h2>
-    <ul class="sort-list">
-      <li class="current">по цене</li>
-      <li>
-        <a href="#">по типу</a>
-      </li>
-      <li>
-        <a href="#">по названиию</a>
-      </ul>
+
+    <div class="catalog-wrapper">
+      <div class="form">
+      Я форма
+    </div>
     <section class="catalog">
+      <h2 class="center-subtitle">Сортировать:</h2>
+      <ul class="sort-list">
+        <li class="current">по цене</li>
+        <li>
+          <a href="#">по типу</a>
+        </li>
+        <li>
+          <a href="#">по названиию</a>
+        </ul>
       <h2 class="visually-hidden">Список готовых шаблонов</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -153,6 +160,7 @@
         </li>
       </ul>
     </section>
+      </div>
   </main>
   <footer class="main-footer">
     <section class="contacts">
@@ -163,13 +171,18 @@
     </section>
     <section class="socials">
       <h3 class="socials-title">Контакты</h3>
+      <div class="socials-wrapper">
       <ul class="socials-list">
         <li class="socials-item"><a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
-        <li class="socials-item"><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук" ></a></li>
-        <li class="socials-item"><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
+        <li class="socials-item"><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+        <li class="socials-item"><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
+        </li>
       </ul>
+      <div class="socials-text-wrapper">
       <p class="socials-text"><strong>Давайте дружить, это выгодно!</strong></p>
       <p class="socials-sale">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+    </div>
     </section>
   </footer>
 </body>
