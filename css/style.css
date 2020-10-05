@@ -59,8 +59,6 @@ img{
   outline-offset: -5px;
   */
 }
-
-
  .main-navigation{
   display:flex;
   flex-direction: column;
@@ -120,7 +118,7 @@ img{
 }
 .center,
 .main-footer {
-  width: 1160px;
+  width: 1157px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -147,6 +145,34 @@ img{
   outline-offset: -5px;
 }
 */
+
+ .description{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.description-wrapper p{
+  margin: 40px 0;
+}
+
+
+
+
+.description .description-image{
+  width: 760px;
+  height: 431px;
+  background-image: url(../img/nerds-slider.png);
+}
+
+.visually-hidden{
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
 .basket-navigation{
   max-width:75px;
 }
@@ -422,9 +448,16 @@ img{
   text-align: center;
 }
 .socials-wrapper{
-  display:grid;
-  grid-template-columns: 1fr max-content;
-
+  display:flex;
+ justify-content: space-between;
+}
+.socials-wrapper .socials-list{
+  display:flex;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+ 
 }
 .socials .socials-text{
   font-weight: bold;
