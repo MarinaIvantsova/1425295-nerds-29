@@ -1,166 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body inner-page">
   <header class="main-header">
-
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/logo.svg" width="160" height="65" alt="Nerds">
-      </a>
-      <ul class="site-navigation">
-        <li class="site-navigation-item"><a href="index.html">Студия</a></li>
-        <li class="site-navigation-item"><a href="#">Клиенты</a></li>
-        <li class="site-navigation-item shop"><a href="#">Магазин</a></li>
-        <li class="site-navigation-item"><a href="#">Контакты</a></li>
-      </ul>
-      <a class="basket" href="#">Корзина</a>
+      <div class="site-navigation-wrapper">
+        <div class="center">
+          <a class="main-header-logo">
+            <img src="img/logo.svg" width="160" height="65" alt="Nerds">
+          </a>
+          <ul class="site-navigation">
+            <li class="site-navigation-item"><a href="index.html">Студия</a></li>
+            <li class="site-navigation-item"><a href="#">Клиенты</a></li>
+            <li class="site-navigation-item shop"><a href="#">Магазин</a></li>
+            <li class="site-navigation-item"><a href="#">Контакты</a></li>
+          </ul>
+          <div class="basket-navigation">
+            <a class="basket" href="#">Корзина</a>
+          </div>
+        </div>
+      </div>
       <p class="title">Магазин готовых шаблонов</p>
     </nav>
-
   </header>
   <main class="center">
 
     <div class="catalog-wrapper">
       <div class="form">
-      Я форма
-    </div>
-    <section class="catalog">
-      <h2 class="center-subtitle">Сортировать:</h2>
-      <ul class="sort-list">
-        <li class="current">по цене</li>
-        <li>
-          <a href="#">по типу</a>
-        </li>
-        <li>
-          <a href="#">по названиию</a>
+        Я форма
+      </div>
+      <section class="catalog">
+        <h2 class="center-subtitle">Сортировать:</h2>
+        <ul class="sort-list">
+          <li class="current">по цене</li>
+          <li>
+            <a href="#">по типу</a>
+          </li>
+          <li>
+            <a href="#">по названиию</a>
         </ul>
-      <h2 class="visually-hidden">Список готовых шаблонов</h2>
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <a href="#">
-            <p class="catalog-item-image">
-                <img src="img/sedona.png" width="360" height="620" alt="Информационный сайт для туристов Sedona">
-            </p>
-          </a>
-            <div class="catalog-info">
-            <h3>
-              <span class="catalog-item-title">Sedona</span>
-            </h3>
-            <p class="catalog-category">Информационный сайт<br>для туристов</p>
-            <p class="catalog-item-price">
-              <a class="button price" href="#">9 900</a>
-            </p>
-            </div>
-        </li>
-        <li class="catalog-item">
+        <h2 class="visually-hidden">Список готовых шаблонов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
             <a href="#">
-            <p class="catalog-item-image">
-                <img src="img/pink.png" width="360" height="619" alt="Продуктовый лендинг приложения для iOS и Android Pink">
+              <p class="catalog-item-image">
+                <img src="img/sedona.png" width="360" height="620" alt="Информационный сайт для туристов Sedona">
+              </p>
+            </a>
+            <div class="catalog-info">
+              <h3>
+                <span class="catalog-item-title">Sedona</span>
+              </h3>
+              <p class="catalog-category">Информационный сайт<br>для туристов</p>
+              <p class="catalog-item-price">
+                <a class="button price" href="#">9 900</a>
+              </p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <a href="#">
+              <p class="catalog-item-image">
+                <img src="img/pink.png" width="360" height="619"
+                  alt="Продуктовый лендинг приложения для iOS и Android Pink">
               </p>
             </a>
 
             <div class="catalog-info">
-            <h3>
-              <span class="catalog-item-title">Pink App</span>
-            </h3>
-            <p class="catalog-category">Продуктовый лендинг<br>приложения для iOS и Android</p>
-            <p class="catalog-item-price">
-              <a class="button price" href="#">9 900</a>
-            </p>
+              <h3>
+                <span class="catalog-item-title">Pink App</span>
+              </h3>
+              <p class="catalog-category">Продуктовый лендинг<br>приложения для iOS и Android</p>
+              <p class="catalog-item-price">
+                <a class="button price" href="#">9 900</a>
+              </p>
             </div>
-        </li>
-        <li class="catalog-item">
-          <a href="#">
-            <p class="catalog-item-image">
+          </li>
+          <li class="catalog-item">
+            <a href="#">
+              <p class="catalog-item-image">
                 <img src="img/borodinski.png" width="360" height="619" alt="Барбершоп Бородинский">
               </p>
             </a>
 
             <div class="catalog-info">
-            <h3>
-              <span class="catalog-item-title">Barbershop Borodinski</span>
-            </h3>
-            <p class="catalog-category">Мужская стрижка<br>Barbershop Borodinski</p>
-            <p class="catalog-item-price">
-              <a class="button price" href="#">9 900</a>
-            </p>
+              <h3>
+                <span class="catalog-item-title">Barbershop Borodinski</span>
+              </h3>
+              <p class="catalog-category">Мужская стрижка<br>Barbershop Borodinski</p>
+              <p class="catalog-item-price">
+                <a class="button price" href="#">9 900</a>
+              </p>
             </div>
-        </li>
-        <li class="catalog-item">
-          <a href="#">
-            <p class="catalog-item-image">
+          </li>
+          <li class="catalog-item">
+            <a href="#">
+              <p class="catalog-item-image">
                 <img src="img/mishka.png" width="360" height="619" alt="Милые штуки ручной работы для дома Mishka">
-                </p>
-          </a>
+              </p>
+            </a>
             <div class="catalog-info">
-            <h3>
-              <span class="catalog-item-title">Mishka</span>
-            </h3>
-            <p class="catalog-category">Милые штуки ручной<br> работы для дома</p>
-            <p class="catalog-item-price">
-              <a class="button price" href="#">9 900</a>
-            </p>
+              <h3>
+                <span class="catalog-item-title">Mishka</span>
+              </h3>
+              <p class="catalog-category">Милые штуки ручной<br> работы для дома</p>
+              <p class="catalog-item-price">
+                <a class="button price" href="#">9 900</a>
+              </p>
             </div>
 
-        </li>
-        <li class="catalog-item">
+          </li>
+          <li class="catalog-item">
             <a href="#">
-            <p class="catalog-item-image">
+              <p class="catalog-item-image">
                 <img src="img/study.png" width="360" height="619" alt="Учеба">
               </p>
             </a>
 
             <div class="catalog-info">
-            <h3>
-              <span class="catalog-item-title">Учеба</span>
-            </h3>
-            <p class="catalog-category">Учеба еще никогда<br> не была такой<br> интересной!</p>
-            <p class="catalog-item-price">
-              <a class="button price" href="#">9 900</a>
-            </p>
+              <h3>
+                <span class="catalog-item-title">Учеба</span>
+              </h3>
+              <p class="catalog-category">Учеба еще никогда<br> не была такой<br> интересной!</p>
+              <p class="catalog-item-price">
+                <a class="button price" href="#">9 900</a>
+              </p>
             </div>
-        </li>
-        <li class="catalog-item">
+          </li>
+          <li class="catalog-item">
             <a href="#">
-            <p class="catalog-item-image">
+              <p class="catalog-item-image">
                 <img src="img/kvast.png" width="360" height="619" alt="Кваст">
               </p>
             </a>
-          <div class="catalog-info">
-            <h3>
-              <span class="catalog-item-title">Кваст</span>
-            </h3>
-            <p class="catalog-category">Крафтовый квас<br> всему голова!</p>
-            <p class="catalog-item-price">
-              <a class="button price" href="#"> 9 900</a>
-            </p>
+            <div class="catalog-info">
+              <h3>
+                <span class="catalog-item-title">Кваст</span>
+              </h3>
+              <p class="catalog-category">Крафтовый квас<br> всему голова!</p>
+              <p class="catalog-item-price">
+                <a class="button price" href="#"> 9 900</a>
+              </p>
             </div>
-        </li>
-      </ul>
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current">
-          <a>1</a>
-        </li>
-        <li  class="pagination-item">
-          <a href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">Следующая</a>
-        </li>
-      </ul>
-    </section>
-      </div>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current">
+            <a>1</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">Следующая</a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
   <footer class="main-footer">
     <section class="contacts">
@@ -172,18 +178,20 @@
     <section class="socials">
       <h3 class="socials-title">Контакты</h3>
       <div class="socials-wrapper">
-      <ul class="socials-list">
-        <li class="socials-item"><a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
-        <li class="socials-item"><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
-        <li class="socials-item"><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
-        </li>
-      </ul>
-      <div class="socials-text-wrapper">
-      <p class="socials-text"><strong>Давайте дружить, это выгодно!</strong></p>
-      <p class="socials-sale">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-    </div>
+        <ul class="socials-list">
+          <li class="socials-item"><a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a>
+          </li>
+          <li class="socials-item"><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+          <li class="socials-item"><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
+          </li>
+        </ul>
+        <div class="socials-text-wrapper">
+          <p class="socials-text"><strong>Давайте дружить, это выгодно!</strong></p>
+          <p class="socials-sale">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
     </section>
   </footer>
 </body>
+
 </html>
