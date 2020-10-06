@@ -494,14 +494,14 @@ img{
   list-style: none;
   }
   .catalog-item{
-    width: 358px;
+    width:358px;
     min-height:231px;
-    margin-right: 42px;
-    margin-bottom: 30px;
+    margin-right:42px;
+    margin-bottom:30px;
   }
   .pagination-list{
-    display: flex;
+    display:flex;
   }
   .pagination-item{
-    margin-right: 11px;;
+    margin-right:11px;
   }
