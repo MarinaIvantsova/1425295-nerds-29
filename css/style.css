@@ -506,6 +506,12 @@ img{
   background-color: var(--special-extra-gray);
   border-radius: 50%;
  }
+ .socials-item a:hover{
+   background-color: var(--basic-extra-pink);
+ }
+ .socials-item a:active{
+ opacity:0.3;
+}
 
  .socials-list{
    width: 260px;
@@ -612,13 +618,20 @@ img{
 .company-item:not(:last-child):after{
   content: "";
   position: absolute;
-
-
   width: 2px;
   height: 52px;
   background-color: var(--basic-gray);
   bottom:45%;
   margin-left: 50px;
+}
+.company-item a{
+  opacity:0.2;
+}
+.company-item a:hover{
+  opacity: 1;
+}
+.company-item a:active{
+  opacity: 0.2;
 }
 
  .feedback{
