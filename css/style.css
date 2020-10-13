@@ -228,11 +228,24 @@ img{
 }
 
 .sort-list{
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 }
+.sort-list li{
+  margin-right: 25px;
+}
+.sort-list li:last-child{
+  margin-right: 47px;
+}
+.sort-list img{
+  margin-right: 18px;
+}
+
 .sort-list a:hover{
   color:var(--basic-black);
   opacity:0.6;
@@ -247,10 +260,17 @@ img{
 }
 .catalog-info{
   display:none;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 45px 87px;
+  background-color: var(--basic-gray) ;
+
 }
 .catalog-item:hover .catalog-info{
   display: block
 }
+
 .catalog-list,
 .sort-list,
 .pagination-list,
@@ -268,9 +288,12 @@ img{
   line-height: 18px;
   text-align: center;
   color: var(--basic-very-gray);
+  margin-bottom: 32px;
 }
 .catalog-item-title:hover{
   color: var(--basic-pink);
+  text-align: center;
+
 }
 .catalog-item-title:active{
   color:var(--basic-black);
@@ -282,6 +305,7 @@ img{
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+
 }
 .catalog-item-price .button{
   padding: 15px 72px;
@@ -537,7 +561,25 @@ img{
   padding:0;
   margin:0;
   margin-bottom: 55px;
+  margin-top:54px;
   list-style: none;
+
+  }
+  .catalog-item{
+    position:relative;
+  }
+  .catalog-list li:before{
+    position:absolute;
+    content: "";
+    width: 360px;
+    height: 40px;
+    background-image: url(../img/browser.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: -20px;
+  }
+  .catalog-list li:hover:before{
+    opacity:0.12;
   }
   .catalog-item{
     width:358px;
@@ -547,10 +589,16 @@ img{
   }
   .pagination-list{
     display:flex;
+    flex-wrap: wrap;
   }
   .pagination-item{
     margin-right:11px;
   }
+  .pagination-item a{
+    display: block;
+    padding: 10px 19px;
+  }
+
 
   .basket{
     position: relative;
