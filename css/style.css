@@ -226,6 +226,10 @@ img{
   text-decoration-line: underline;
   text-decoration-color: var(--basic-pink);
 }
+.inner-page .shop:focus{
+  text-decoration-line: underline;
+  text-decoration-color: var(--basic-pink);
+}
 
 
 .sort-list-wrapper{
@@ -486,6 +490,28 @@ img{
   line-height: 18px;
   font-weight: normal;
 }
+.contacts{
+  margin-bottom: 74px;
+}
+.contacts-wrapper{
+
+  position: relative;
+
+}
+.contacts-wrapper .contacts-block{
+  position:absolute;
+  top:54px;
+  left:112px;
+  display:block;
+  background-color: var(--basic-white);
+  padding: 15px 20px;
+
+  margin-bottom: 54px;
+
+}
+
+
+
 .contacts .contacts-title{
   font-weight: bold;
   font-size: 18px;
