@@ -34,14 +34,60 @@
   <main class="center">
 
     <div class="catalog-wrapper">
-      <div class="form">
-        Я форма
-      </div>
+
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter-item">
+          <legend>Стоимость:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0"></div>
+              <div class="toggle toggle-max" tabindex="0"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="15000">
+              </label>
+            </div>
+          </div>
+      </fieldset>
+
+        <p><b>СЕТКА:</b></p>
+        <label>
+          <input type="radio" name="adaptive" value="Адаптивная"> Адаптивная
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="fix" value="Фиксированная"> Фиксированная
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="rubber" value="Резиновая"> Резиновая
+        </label>
+        <p><b>ОСОБЕННОСТИ:</b></p>
+        <input type="checkbox" name="slider" id="slider-field" checked>
+        <label for="slider-field">Слайдер</label><br>
+        <input type="checkbox" name="advantages" id="advantages-field">
+        <label for="advantages-field">Блок преимуществ</label><br>
+        <input type="checkbox" name="news" id="news-field" checked>
+        <label for="news-field">Новости</label><br>
+        <input type="checkbox" name="gallery" id="gallery-field" >
+        <label for="gallery-field">Галерея</label><br>
+        <input type="checkbox" name="basket" id="basket-field" >
+        <label for="basket-field">Корзина</label><br>
+        <input type="button" value="Показать">
+
+      </form>
       <section class="catalog">
 
 
         <div class="sort-list-wrapper">
-          <h2 class="center-subtitle">Сортировать:</h2>
+          <h1 class="center-subtitle">СОРТИРОВАТЬ:</h1>
           <div class="sort-wrapper">
         <ul class="sort-list">
           <li class="current">по цене</li>
