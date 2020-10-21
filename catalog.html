@@ -34,9 +34,10 @@
   <main class="center">
 
     <div class="catalog-wrapper">
+      <section class="filters">
 
-      <form method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter-item">
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter-item filter-range">
           <legend>Стоимость:</legend>
           <div class="range-filter">
             <div class="range-controls">
@@ -56,33 +57,58 @@
             </div>
           </div>
       </fieldset>
+      <fieldset class="filter-item filter-radio-fieldset">
+        <legend>Сетка:</legend>
+        <ul>
+          <li class="filter-option filter-radio">
 
-        <p><b>СЕТКА:</b></p>
-        <label>
-          <input type="radio" name="adaptive" value="Адаптивная"> Адаптивная
-        </label>
-        <br>
-        <label>
-          <input type="radio" name="fix" value="Фиксированная"> Фиксированная
-        </label>
-        <br>
-        <label>
-          <input type="radio" name="rubber" value="Резиновая"> Резиновая
-        </label>
-        <p><b>ОСОБЕННОСТИ:</b></p>
-        <input type="checkbox" name="slider" id="slider-field" checked>
-        <label for="slider-field">Слайдер</label><br>
-        <input type="checkbox" name="advantages" id="advantages-field">
-        <label for="advantages-field">Блок преимуществ</label><br>
-        <input type="checkbox" name="news" id="news-field" checked>
-        <label for="news-field">Новости</label><br>
-        <input type="checkbox" name="gallery" id="gallery-field" >
-        <label for="gallery-field">Галерея</label><br>
-        <input type="checkbox" name="basket" id="basket-field" >
-        <label for="basket-field">Корзина</label><br>
-        <input type="button" value="Показать">
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="adaptive" value="Adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+          </li>
+          <li class="filter-option filter-radio">
+
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="fix" value="Фиксированная" id="filter-fix">
+              <label for="filter-fix">Фиксированная</label>
+          </li>
+          <li class="filter-option filter-radio">
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="rubber" value="Резиновая" id="filter-rubber">
+              <label for="filter-rubber">Резиновая </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="filter-item">
+        <legend>Особенности:</legend>
+        <ul>
+          <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="slider-field" checked>
+
+              <label for="slider-field">Слайдер</label>
+          </li>
+          <li class="filter-option filter-radio">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantages" id="advantages-field">
+              <label for="advantages-field">Блок преимуществ</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news"  id="news-field" checked>
+              <label for="news-field">Новости </label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery"  id="gallery-field">
+            <label for="gallery-field">Галерея </label>
+          </li>
+          <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket"  id="basket-field">
+          <label for="basket-field">Корзина </label>
+          </li>
+        </ul>
+      </fieldset>
+
+
+
+
 
       </form>
+    </section>
       <section class="catalog">
 
 
