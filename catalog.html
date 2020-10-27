@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -35,7 +35,7 @@
 
     <div class="catalog-wrapper">
       <section class="filters">
-
+        <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-item filter-range">
           <legend>Стоимость:</legend>
@@ -131,8 +131,8 @@
               </p>
             </a>
             <div class="catalog-info">
-              <h3>
-                <span class="catalog-item-title">Sedona</span>
+              <h3 class="catalog-info-header">
+                <p class="catalog-item-title">Sedona</p>
               </h3>
               <p class="catalog-category">Информационный сайт<br>для туристов</p>
               <p class="catalog-item-price">
@@ -150,7 +150,7 @@
 
             <div class="catalog-info">
               <h3>
-                <span class="catalog-item-title">Pink App</span>
+                <p class="catalog-item-title">Pink App</p>
               </h3>
               <p class="catalog-category">Продуктовый лендинг<br>приложения для iOS и Android</p>
               <p class="catalog-item-price">
@@ -167,7 +167,7 @@
 
             <div class="catalog-info">
               <h3>
-                <span class="catalog-item-title">Barbershop Borodinski</span>
+                <p class="catalog-item-title">Barbershop Borodinski</p>
               </h3>
               <p class="catalog-category">Мужская стрижка<br>Barbershop Borodinski</p>
               <p class="catalog-item-price">
@@ -183,14 +183,13 @@
             </a>
             <div class="catalog-info">
               <h3>
-                <span class="catalog-item-title">Mishka</span>
+                <p class="catalog-item-title">Mishka</p>
               </h3>
               <p class="catalog-category">Милые штуки ручной<br> работы для дома</p>
               <p class="catalog-item-price">
                 <a class="button price" href="#">9 900</a>
               </p>
             </div>
-
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -201,7 +200,7 @@
 
             <div class="catalog-info">
               <h3>
-                <span class="catalog-item-title">Учеба</span>
+                <p class="catalog-item-title">Учеба</p>
               </h3>
               <p class="catalog-category">Учеба еще никогда<br> не была такой<br> интересной!</p>
               <p class="catalog-item-price">
@@ -217,7 +216,7 @@
             </a>
             <div class="catalog-info">
               <h3>
-                <span class="catalog-item-title">Кваст</span>
+                <p class="catalog-item-title">Кваст</p>
               </h3>
               <p class="catalog-category">Крафтовый квас<br> всему голова!</p>
               <p class="catalog-item-price">
@@ -245,19 +244,23 @@
   </main>
   <footer class="main-footer">
     <section class="contacts">
-      <div class="contacts-wrapper">
+
+
+  <div class="contacts-wrapper">
+  <div class="center">
         <div class="contacts-block">
-      <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
-      <p class="contacts-text">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
-      <a class="contacts-phone" href="+7(812)275-75-75">+7 (812) 275-75-75</a><br>
-      <a class="button feedback" href="#">Напишите нам</a>
-    </div>
-    <div class="map">
-
-        <img src="img/map.png" width="1157" height="416" alt="Map">
-
-    </div>
+          <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
+          <p class="contacts-text">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+          <a class="contacts-phone" href="+7(812)275-75-75">+7 (812) 275-75-75</a><br>
+          <a class="button feedback" href="#">Напишите нам</a>
+        </div>
+   </div>
+        <div class="map">
+          <img src="img/map.png" width="1157" height="416" alt="Map">
+         </div>
   </div>
+
+
     </section>
     <section class="socials">
       <h3 class="visually-hidden">Контакты</h3>
@@ -273,7 +276,7 @@
           <p class="socials-text"><strong>Давайте дружить, это выгодно!</strong></p>
           <p class="socials-sale">Скидка 10% для друзей из социальных сетей.</p>
         </div>
-      </div>
+
     </section>
   </footer>
 </body>

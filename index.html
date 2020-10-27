@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,6 +41,17 @@
       <a class="button info" href="#">Узнать больше</a><br>
     </div>
     <div class="description-image">
+    </div>
+    <div class="slider">
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+
+      <div class="slider-controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+      </div>
     </div>
     </section>
   </div>
@@ -114,36 +125,42 @@
       </ul>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer center">
     <section class="contacts">
       <div class="contacts-wrapper">
-        <div class="contacts-block">
-      <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
-      <p class="contacts-text">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
-      <a class="contacts-phone" href="+7(812)275-75-75">+7 (812) 275-75-75</a><br>
-      <a class="button feedback" href="#">Напишите нам</a>
-    </div>
-    <div class="map">
 
-        <img src="img/map.png" width="1157" height="416" alt="Map">
+              <div class="contacts-block">
+                <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
+                <p class="contacts-text">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+                <a class="contacts-phone" href="+7(812)275-75-75">+7 (812) 275-75-75</a><br>
+                <a class="button feedback" href="#">Напишите нам</a>
+              </div>
 
-    </div>
-  </div>
+         <div class="center">
+              <div class="map">
+                <img src="img/map.png" width="1440" height="416" alt="Map">
+               </div>
+               </div>
+          </div>
+
     </section>
     <section class="socials">
-      <h3 class="visually-hidden">Контакты</h3>
+      <h3 class="visually-hidden socials-title">Контакты</h3>
       <div class="socials-wrapper">
+<div class="socials-list-wrapper">
       <ul class="socials-list">
-        <li class="socials-item"><a  href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
-        <li class="socials-item"><a  href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
-        <li class="socials-item"><a  href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
+        <li class="socials-item"><a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
+        <li class="socials-item"><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+        <li class="socials-item"><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
         </li>
       </ul>
-      <div class="socials-text-wrapper">
+</div>
+    <div class="socials-text-wrapper">
       <p class="socials-text"><strong>Давайте дружить, это выгодно!</strong></p>
       <p class="socials-sale">Скидка 10% для друзей из социальных сетей.</p>
     </div>
     </div>
+
     </section>
   </footer>
 </body>
