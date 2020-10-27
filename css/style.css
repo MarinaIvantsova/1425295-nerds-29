@@ -116,6 +116,7 @@ img{
   padding:0 10px;
 }
  .description{
+  position:relative;
   display:grid;
   grid-template-columns:1fr 1fr;
   background-color:var(--basic-gray);
@@ -174,7 +175,7 @@ img{
   grid-template-columns:1fr 1fr 1fr 1fr ;
 }
 .companies{
-  margin-bottom:185px;
+  margin-bottom:80px;
   position:relative;
 }
 .inner-page .main-header{
@@ -232,7 +233,7 @@ img{
 .sort-list li:last-child{
   margin-right:47px;
 }
-.sort-list-wrapper img{
+.sort-list-wrapper img:first-child{
   margin-right:18px;
 }
 .sort-list a:hover{
@@ -461,15 +462,21 @@ img{
 }
 .contacts-wrapper{
   position:relative;
+  height: 416px;
 }
 .contacts-wrapper .contacts-block{
   position:absolute;
-  top:0;
+  top:55px;
   left:0;
   display:block;
   background-color:var(--basic-white);
-  padding:40px 45px;
-  margin-bottom:54px;
+  padding-top:49px;
+  padding-right:50px;
+  padding-left:50px;
+  padding-bottom: 47px;
+}
+.map img {
+  height: 416px;
 }
 .center{
   width:1157px;
@@ -500,8 +507,7 @@ img{
   text-align:center;
 }
 .socials{
-  margin-top:122px;
-  margin-bottom:74px;
+  margin-bottom:68px;
 }
 .main-footer .socials .socials-wrapper{
   display:flex;
@@ -853,7 +859,9 @@ border-radius:3px;
   font-size:inherit;
 }
 .slider {
-  position: relative;
+  position: absolute;
+  bottom:80px;
+  left:46%;
 }
 .slider input[type="radio"] {
   display: none;
@@ -864,14 +872,14 @@ border-radius:3px;
   text-align: center;
 }
 .slider-controls label {
-  display: inline-block;
-  margin: 0 3px;
-  width: 10px;
-  height: 10px;
-  border: 4px solid white;
-  background-color: var(--basic-white);
-  border-radius: 50%;
-  cursor: pointer;
+  display:inline-block;
+  margin:0 6px;
+  width:10px;
+  height:10px;
+  border:4px solid white;
+  background-color:var(--basic-white);
+  border-radius:50%;
+  cursor:pointer;
 }
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
