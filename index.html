@@ -34,7 +34,7 @@
       <h1 class="visually-hidden">Дизайн студия Nerds</h1>
       <h2 class="visually-hidden">Описание продукта</h2>
       <div class="description-wrapper">
-      <p class="description-text"><strong>Долго,дорого,<br>скурпулезно</strong></p>
+      <p class="description-text"><strong>Долго, дорого,<br>скурпулезно</strong></p>
       <p class="description-text-info">
         Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
       </p>
@@ -96,7 +96,7 @@
       </ul>
     </div>
     <div class="about-table">
-      <img src="img/illustration.svg" alt="Иконка Nerds">
+      <img src="img/illustration.svg" width="360" height="208" alt="Иконка Nerds">
       <h3 class="about-subtitle">с 2004 года любим точность во всем:</h3>
       <table class="table-list">
         <tr>
@@ -132,10 +132,9 @@
               <div class="contacts-block">
                 <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
                 <p class="contacts-text">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
-                <a class="contacts-phone" href="+7(812)275-75-75">+7 (812) 275-75-75</a><br>
+                <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a><br>
                 <a class="button feedback" href="#">Напишите нам</a>
               </div>
-
               <div class="map">
                 <img src="img/map.png" width="1440" height="416" alt="Map">
                </div>
@@ -162,6 +161,27 @@
 
     </section>
   </footer>
+  <section class="modal modal-feedback">
+    <h2 class="feedback-title">Напишите нам</h2>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="user-wrapper">
+      <p>
+        <label class="user-name" for="user-name">Ваше имя:</label><br>
+        <input class="user-icon-name" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label class="user-email" for="user-email">Ваш email:</label><br>
+        <input class="user-icon-name" id="user-email" type="email" name="user-email" placeholder="email@example.com">
+      </p>
+    </div>
+      <label class="user-letter" for="letter">Текст письма:</label><br>
+        <input class="letter" id="letter" type="text" name="letter-text"  placeholder="В свободной форме">
+  </input><br>
+        <button class="button feedback" type="submit">Отправить</button>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+
+    </form>
+  </section>
 </body>
 
 </html>
