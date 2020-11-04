@@ -915,7 +915,7 @@ border-radius: 3px;
 .modal-feedback {
   left:50%;
   transform: translateX(-50%);
-  top: 600px;
+  top: 20px;
   left: auto;
   width: 960px;
   padding-top: 63px;
