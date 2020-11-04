@@ -885,14 +885,13 @@ border-radius: 3px;
 }
 .modal {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  left:50%;
+  transform: translateX(-50%);
+  top: 20px;
   margin: auto;
   color: var(--basic-black);
   background-color: var(--basic-white);
-
+  width: 960px;
 }
 .modal-close {
   position: absolute;
@@ -913,11 +912,6 @@ border-radius: 3px;
   background-image: url("../img/close-cross.svg");
 }
 .modal-feedback {
-  left:50%;
-  transform: translateX(-50%);
-  top: 20px;
-  left: auto;
-  width: 960px;
   padding-top: 63px;
   padding-bottom: 84px;
   padding-right: 100px;
@@ -928,6 +922,7 @@ border-radius: 3px;
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
+  margin-bottom: 37px;
 }
 .user-name,
 .user-letter,
@@ -937,9 +932,23 @@ border-radius: 3px;
   font-size: 16px;
   line-height: 18px;
 }
+.user-letter {
+  margin-top: 9px;
+}
 
-.user-wrapper {
+.modal-feedback .user-wrapper {
   display: flex;
+  width: 960px;
+
+}
+.user-wrapper-letter{
+  width: 100%;
+
+}
+.feedback-title{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .user-icon-name {
   border: 2px solid var(--unusual-gray);
@@ -968,5 +977,6 @@ border-radius: 3px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-  border:none;
+  border: none;
 }
+
