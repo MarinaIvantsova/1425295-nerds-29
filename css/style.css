@@ -901,7 +901,10 @@ border-radius: 3px;
   height: 21px;
   border: none;
   cursor: pointer;
+  background-color: transparent;
+
 }
+
 .modal-close::before {
   content: "";
   position: absolute;
@@ -939,23 +942,18 @@ border-radius: 3px;
 .user-letter {
   margin-top: 9px;
 }
-
 .modal-feedback .user-wrapper {
   display: flex;
+  justify-content: space-between;
 }
-
-
 .user-icon-name {
   display: block;
   width: 360px;
   box-sizing: border-box;
   border: 2px solid var(--unusual-gray);
   border-radius: 3px;
-  height: 50px;
   margin-top: 9px;
-}
-.user-icon-name:first-of-type {
-margin-right: 40px;
+  height: 50px;
 }
 .letter {
   display: block;
@@ -965,7 +963,6 @@ margin-right: 40px;
   height: 118px;
   margin-top: 9px;
   box-sizing: border-box;
-
 }
 .modal-feedback .feedback {
   vertical-align: top;
@@ -981,4 +978,15 @@ margin-right: 40px;
   text-align: center;
   border: none;
 }
-
+.input-wrapper ::placeholder{
+padding-left: 14px;
+padding-right: 12px;
+padding-top: 14px;
+padding-bottom: 14px;
+}
+.textarea-wrapper ::placeholder{
+  padding-left: 14px;
+padding-right: 412px;
+padding-top: 14px;
+padding-bottom: 82px;
+}
