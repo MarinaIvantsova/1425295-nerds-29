@@ -953,14 +953,12 @@ border-radius: 3px;
   border: 2px solid var(--unusual-gray);
   border-radius: 3px;
   margin-top: 9px;
-  height: 50px;
 }
 .letter {
   display: block;
   border: 2px solid var(--unusual-gray);
   border-radius: 3px;
   width: 760px;
-  height: 118px;
   margin-top: 9px;
   box-sizing: border-box;
 }
@@ -978,15 +976,15 @@ border-radius: 3px;
   text-align: center;
   border: none;
 }
-.input-wrapper ::placeholder{
+.user-icon-name{
 padding-left: 14px;
 padding-right: 12px;
 padding-top: 14px;
 padding-bottom: 14px;
 }
-.textarea-wrapper ::placeholder{
+.letter{
   padding-left: 14px;
-padding-right: 412px;
-padding-top: 14px;
-padding-bottom: 82px;
+  padding-right: 412px;
+  padding-top: 14px;
+  padding-bottom: 82px;
 }
