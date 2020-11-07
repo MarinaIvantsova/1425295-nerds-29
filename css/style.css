@@ -27,6 +27,7 @@
   --basic-extra-yellow:#EAB534;
   --basic-very-yellow: #E5A722;
   --basic-extra-blue: #283136;
+  --specially-gray-for-modal: #B4B9BB;
 }
 
 /* Global */
@@ -117,7 +118,7 @@ img {
 }
  .description {
   position: relative;
-  
+
   background-color: var(--basic-gray);
   background-size: 100%;
 }
@@ -142,6 +143,9 @@ img {
   width: 760px;
   height: 431px;
   background-image: url(../img/planshet.png);
+}
+.info{
+  display: inline-block;
 }
 .visually-hidden {
   position: absolute;
@@ -905,7 +909,6 @@ border-radius: 3px;
   border: none;
   cursor: pointer;
   background-color: transparent;
-
 }
 
 .modal-close::before {
@@ -924,7 +927,6 @@ border-radius: 3px;
   padding-right: 101px;
   padding-left: 101px;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-  display: none;
 }
 .feedback-title {
   font-weight: bold;
@@ -935,9 +937,8 @@ border-radius: 3px;
   list-style: none;
   padding: 0;
 }
-.user-name,
-.user-letter,
-.user-email {
+.user-label,
+.user-letter {
   display: block;
   font-weight: bold;
   font-size: 16px;
@@ -957,6 +958,10 @@ border-radius: 3px;
   border: 2px solid var(--unusual-gray);
   border-radius: 3px;
   margin-top: 9px;
+  padding-left: 14px;
+  padding-right: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 .letter {
   display: block;
@@ -980,15 +985,23 @@ border-radius: 3px;
   text-align: center;
   border: none;
 }
-.user-icon-name{
-padding-left: 14px;
-padding-right: 12px;
-padding-top: 14px;
-padding-bottom: 14px;
-}
 .letter{
   padding-left: 14px;
   padding-right: 412px;
   padding-top: 14px;
   padding-bottom: 82px;
 }
+.user-icon-name:hover{
+  border-color: var(--specially-gray-for-modal);
+  color: var(--specially-gray-for-modal);
+}
+.user-icon-name:active{
+  border: 2px solid var(--basic-black);
+  color: var(--basic-black);
+}
+.user-icon-name:invalid{
+  border: 2px solid var(--basic-extra-pink);
+  color: var(--basic-extra-pink);
+}
+
+
