@@ -148,6 +148,7 @@ display: none;
 }
 .info{
   display: inline-block;
+  vertical-align: top;
 }
 .visually-hidden {
   position: absolute;
@@ -504,6 +505,7 @@ display: none;
 }
 .contacts-phone{
   display: inline-block;
+  vertical-align: top;
 }
 .contacts .feedback {
   display: block;
@@ -686,7 +688,6 @@ display: none;
 .company-item a:active {
   opacity: 0.2;
 }
-
 .filter-option {
   margin-bottom: 19px;
   padding-left: 45px;
@@ -851,7 +852,6 @@ border-radius: 3px;
 }
 .price-controls label {
   text-transform: uppercase;
-  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
 }
 .price-controls input {
@@ -884,7 +884,7 @@ border-radius: 3px;
   margin: 0 6px;
   width: 10px;
   height: 10px;
-  border: 4px solid white;
+  border: 4px solid var(--basic-white);
   background-color: var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
@@ -918,16 +918,13 @@ border-radius: 3px;
 .modal .button {
   margin-top: 47px;
   border-style: none;
-
-  }
-
+}
 .modal-close:hover {
 opacity: 1;
 }
 .modal-close:focus {
   opacity: 0.1;
-  }
-
+}
 .modal-close::before {
   content: "";
   position: absolute;
@@ -1008,7 +1005,6 @@ opacity: 1;
   padding-top: 14px;
   padding-bottom: 82px;
 }
-
 .user-icon-name:focus{
   border: 2px solid var(--basic-black);
   color: var(--basic-black);
