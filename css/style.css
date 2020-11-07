@@ -118,13 +118,15 @@ img {
 }
  .description {
   position: relative;
-
   background-color: var(--basic-gray);
   background-size: 100%;
 }
 .description-slider-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.description .description-slider-wrapper:not(:first-child) {
+display: none;
 }
 .description-wrapper p {
   margin: 40px 0;
@@ -500,9 +502,11 @@ img {
   line-height: 18px;
   color: var(--basic-very-gray);
 }
-.contacts .feedback {
+.contacts-phone{
   display: inline-block;
-  vertical-align: top;
+}
+.contacts .feedback {
+  display: block;
   color: var(--basic-white);
   background-color: var(--basic-pink);
   padding: 15px 44px;
@@ -510,6 +514,7 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 37px;
 }
 .socials {
   margin-bottom: 68px;
@@ -546,6 +551,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-bottom: 10px;
 }
 .socials .socials-sale {
   font-size: 16px;
@@ -680,9 +686,7 @@ img {
 .company-item a:active {
   opacity: 0.2;
 }
- .feedback {
-  margin-top: 37px;
-}
+
 .filter-option {
   margin-bottom: 19px;
   padding-left: 45px;
@@ -909,7 +913,20 @@ border-radius: 3px;
   border: none;
   cursor: pointer;
   background-color: transparent;
+  opacity: 0.3;
 }
+.modal .button {
+  margin-top: 47px;
+  border-style: none;
+
+  }
+
+.modal-close:hover {
+opacity: 1;
+}
+.modal-close:focus {
+  opacity: 0.1;
+  }
 
 .modal-close::before {
   content: "";
@@ -991,11 +1008,8 @@ border-radius: 3px;
   padding-top: 14px;
   padding-bottom: 82px;
 }
-.user-icon-name:hover{
-  border-color: var(--specially-gray-for-modal);
-  color: var(--specially-gray-for-modal);
-}
-.user-icon-name:active{
+
+.user-icon-name:focus{
   border: 2px solid var(--basic-black);
   color: var(--basic-black);
 }
@@ -1003,5 +1017,21 @@ border-radius: 3px;
   border: 2px solid var(--basic-extra-pink);
   color: var(--basic-extra-pink);
 }
+.user-icon-name:invalid::placeholder{
+  color: var(--basic-extra-pink);
+}
+.user-icon-name:hover{
+  border-color: var(--specially-gray-for-modal);
+}
+.user-icon-name ::placeholder {
+  color: var(--basic-extra-black);
+  opacity: 0.5;
+}
+.user-icon-name:hover ::placeholder{
+  color: var(--basic-extra-black);
+  opacity: 0.5;
+}
+
+
 
 
