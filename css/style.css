@@ -906,9 +906,22 @@ border-radius: 3px;
   background-color: var(--basic-white);
   width: 960px;
 }
-.popap-close {
-  display: none;
+.popup-open {
+  display:block;
 }
+.popup-close {
+
+  display: none;
+
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+@keyframes bounce {
+  to {
+    transform: translate(350px, -400px);
+  }
+}
+
 
 .modal-close {
   position: absolute;
@@ -941,6 +954,7 @@ opacity: 1;
   background-image: url("../img/close-cross.svg");
 }
 .modal-feedback {
+  display: none;
   box-sizing: border-box;
   padding-top: 63px;
   padding-bottom: 84px;
