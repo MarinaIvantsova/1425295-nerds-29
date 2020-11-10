@@ -484,9 +484,11 @@ display: none;
   padding-left: 50px;
   padding-bottom: 47px;
 }
+
 .map img {
   height: 416px;
 }
+
 .center {
   width: 1157px;
   margin: 0 auto;
@@ -904,6 +906,10 @@ border-radius: 3px;
   background-color: var(--basic-white);
   width: 960px;
 }
+.popap-close {
+  display: none;
+}
+
 .modal-close {
   position: absolute;
   top: 78px;
