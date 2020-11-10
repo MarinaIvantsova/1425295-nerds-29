@@ -906,21 +906,6 @@ border-radius: 3px;
   background-color: var(--basic-white);
   width: 960px;
 }
-.popup-open {
-  display:block;
-}
-.popup-close {
-
-  display: none;
-
-  animation-name: bounce;
-  animation-duration: 1s;
-}
-@keyframes bounce {
-  to {
-    transform: translate(350px, -400px);
-  }
-}
 
 
 .modal-close {
@@ -962,6 +947,7 @@ opacity: 1;
   padding-left: 101px;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
+
 .feedback-title {
   font-weight: bold;
   font-size: 45px;
@@ -985,7 +971,8 @@ opacity: 1;
   display: flex;
   justify-content: space-between;
 }
-.user-icon-name {
+.user-icon-name,
+.user-icon-email {
   display: block;
   width: 360px;
   box-sizing: border-box;
@@ -1025,29 +1012,86 @@ opacity: 1;
   padding-top: 14px;
   padding-bottom: 82px;
 }
-.user-icon-name:focus{
+.user-icon-name:focus,
+.user-icon-email:focus{
   border: 2px solid var(--basic-black);
   color: var(--basic-black);
 }
-.user-icon-name:invalid{
+.user-icon-name:invalid,
+.user-icon-email:invalid{
   border: 2px solid var(--basic-extra-pink);
   color: var(--basic-extra-pink);
 }
-.user-icon-name:invalid::placeholder{
+.user-icon-name:invalid::placeholder,
+.user-icon-email:invalid::placeholder{
   color: var(--basic-extra-pink);
 }
-.user-icon-name:hover{
+.user-icon-name:hover,
+.user-icon-email:hover{
   border-color: var(--specially-gray-for-modal);
 }
-.user-icon-name ::placeholder {
+.user-icon-name ::placeholder,
+.user-icon-email ::placeholder {
   color: var(--basic-extra-black);
   opacity: 0.5;
 }
-.user-icon-name:hover ::placeholder{
+.user-icon-name:hover ::placeholder,
+.user-icon-email:hover ::placeholder{
   color: var(--basic-extra-black);
   opacity: 0.5;
 }
 
+.popup-open {
+  display:block;
+  animation: bounce 1s;
+
+}
+.popup-close {
+
+  display: none;
+  }
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 
 
