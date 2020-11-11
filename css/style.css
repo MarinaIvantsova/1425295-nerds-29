@@ -1012,31 +1012,30 @@ opacity: 1;
   padding-top: 14px;
   padding-bottom: 82px;
 }
-.user-icon-name:focus,
-.user-icon-email:focus{
+.user-icon-name:focus{
   border: 2px solid var(--basic-black);
   color: var(--basic-black);
 }
-.user-icon-name:invalid,
-.user-icon-email:invalid{
+.user-icon-name:invalid
+{
   border: 2px solid var(--basic-extra-pink);
   color: var(--basic-extra-pink);
 }
-.user-icon-name:invalid::placeholder,
-.user-icon-email:invalid::placeholder{
+.user-icon-name:invalid::placeholder
+{
   color: var(--basic-extra-pink);
 }
-.user-icon-name:hover,
-.user-icon-email:hover{
+.user-icon-name:hover
+{
   border-color: var(--specially-gray-for-modal);
 }
-.user-icon-name ::placeholder,
-.user-icon-email ::placeholder {
+.user-icon-name ::placeholder
+ {
   color: var(--basic-extra-black);
   opacity: 0.5;
 }
-.user-icon-name:hover ::placeholder,
-.user-icon-email:hover ::placeholder{
+.user-icon-name:hover ::placeholder
+{
   color: var(--basic-extra-black);
   opacity: 0.5;
 }

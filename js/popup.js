@@ -2,9 +2,10 @@ const openLink = document.querySelector(".feedback-popup");
 const closeLink = document.querySelector(".modal-close");
 
 const feedbackPopup = document.querySelector(".modal-feedback");
-const loginForm = document.querySelector(".login-form");
-const loginLogin = modal-feedback.querySelector(".login-icon-name");
-const loginEmail = modal-feedback.querySelector(".login-icon-email");
+const form = feedbackPopup.querySelector("form");
+
+const loginLogin = feedbackPopup.querySelector("[name=user-name]");
+const loginEmail = feedbackPopup.querySelector("[name=user-email]");
 
 
 openLink.addEventListener("click", function (evt) {
@@ -13,14 +14,13 @@ openLink.addEventListener("click", function (evt) {
 });
 
 closeLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
   feedbackPopup.classList.remove("popup-open");
   feedbackPopup.classList.remove("modal-error");
 
 
 });
 
-loginForm.addEventListener("submit", function (evt) {
+form.addEventListener("submit", function (evt) {
   if (!loginLogin.value || !loginEmail.value) {
     evt.preventDefault();
     feedbackPopup.classList.add("modal-error");
